@@ -27,6 +27,7 @@ public class ContactInfoController {
 	 */
 	@RequestMapping("/")
 	public String displayContactForm(Model model) {
+		System.out.println("Hi");
 		Contact contact=new Contact();
 		model.addAttribute("contact", contact);
 		return "contact_info";
